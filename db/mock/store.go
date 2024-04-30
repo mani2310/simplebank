@@ -50,19 +50,19 @@ func (mr *MockStoreMockRecorder) AddAccountBalance(arg0, arg1 interface{}) *gomo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddAccountBalance", reflect.TypeOf((*MockStore)(nil).AddAccountBalance), arg0, arg1)
 }
 
-// CreateAccountAndReturnId mocks base method.
-func (m *MockStore) CreateAccountAndReturnId(arg0 context.Context, arg1 db.CreateAccountParams) (db.Account, error) {
+// CreateAccount mocks base method.
+func (m *MockStore) CreateAccount(arg0 context.Context, arg1 db.CreateAccountParams) (db.Account, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateAccountAndReturnId", arg0, arg1)
+	ret := m.ctrl.Call(m, "CreateAccount", arg0, arg1)
 	ret0, _ := ret[0].(db.Account)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// CreateAccountAndReturnId indicates an expected call of CreateAccountAndReturnId.
-func (mr *MockStoreMockRecorder) CreateAccountAndReturnId(arg0, arg1 interface{}) *gomock.Call {
+// CreateAccount indicates an expected call of CreateAccount.
+func (mr *MockStoreMockRecorder) CreateAccount(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccountAndReturnId", reflect.TypeOf((*MockStore)(nil).CreateAccountAndReturnId), arg0, arg1)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccount", reflect.TypeOf((*MockStore)(nil).CreateAccount), arg0, arg1)
 }
 
 // CreateEntry mocks base method.

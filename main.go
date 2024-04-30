@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"log"
 
-	"github.com/go_udemy/api"
-	db "github.com/go_udemy/db/sqlc"
-	"github.com/go_udemy/util"
+	"github.com/simplebank/api"
+	db "github.com/simplebank/db/sqlc"
+	"github.com/simplebank/util"
 )
 
 func main() {
